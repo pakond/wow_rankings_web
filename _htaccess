@@ -1,0 +1,6 @@
+RewriteEngine On
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/?$ ?action=$2&lang=$1&mode=$3&bracket=$4 [L,NC,QSA]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ ?action=$2&lang=$1&mode=$3&bracket=$4 [L,NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ ?action=$2&lang=$1&mode=$3 [L,NC]
+RewriteRule ^([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ ?action=$2&lang=$1 [L,NC]
+RewriteRule ^([a-zA-Z0-9]+)$ ?lang=$1 [L,NC]
