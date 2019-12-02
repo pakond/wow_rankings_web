@@ -5,7 +5,7 @@ use JSON;
 use Data::Dumper;
 use DBD::mysql;
 
-my ($dbname,$dbhost,$dbuser,$dbpass) = ('blizzardrankings', 'localhost', 'palga85', 'mamoncete30');
+my ($dbname,$dbhost,$dbuser,$dbpass) = ('dbname', 'localhost', 'dbuser', 'dbpass');
 
 my $contenido < io('https://eu.api.battle.net/wow/data/character/races?locale=en_GB&apikey=5gdrgfafqdnkryj8tqafqxsdr4qamdcq');
 
